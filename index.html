@@ -17,12 +17,7 @@
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand mr-auto" href="#">
@@ -31,9 +26,7 @@
         <div id="Navbar" class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <span class="fas fa-home fa-lg"></span> Home
-              </a>
+              <a class="nav-link" href="#"> <span class="fas fa-home fa-lg"></span> Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./aboutus.html">
@@ -41,9 +34,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span class="fas fa-list fa-lg"></span> Menu
-              </a>
+              <a class="nav-link" href="#"> <span class="fas fa-list fa-lg"></span> Menu </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contactus.html">
@@ -60,9 +51,8 @@
           <div class="col-md-6 col-sm">
             <h1>Ristorante con Fusion</h1>
             <p>
-              We take inspiration from the World's best cuisines, and create a
-              unique fusion experience. Our lipsmacking creations will tickle
-              your culinary senses!
+              We take inspiration from the World's best cuisines, and create a unique fusion
+              experience. Our lipsmacking creations will tickle your culinary senses!
             </p>
           </div>
           <div class="col-md-6 col-sm">
@@ -71,9 +61,17 @@
                 <img src="img/logo.png" class="img-fluid" />
               </div>
               <div class="col-md-6">
-                <a href="#reserveSeat" class="btn btn-warning btn-block btn-lg"
-                  >Reserve Table</a
+                <a
+                  role="button"
+                  href="#reserveSeat"
+                  class="btn btn-warning btn-block btn-lg"
+                  data-toggle="tooltip"
+                  data-html="true"
+                  title="Or call us at<br><strong>+123 4567890</strong>"
+                  data-placement="bottom"
                 >
+                  Reserve Table
+                </a>
               </div>
             </div>
           </div>
@@ -107,9 +105,9 @@
                 <span class="badge badge-pill badge-secondary">$4.99</span>
               </h2>
               <p class="d-none d-sm-block">
-                A unique combination of Indian Uthappam (pancake) and Italian
-                pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
-                Vidalia onion, Guntur chillies and Buffalo Paneer.
+                A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with
+                Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and
+                Buffalo Paneer.
               </p>
             </div>
           </div>
@@ -123,14 +121,11 @@
         <div class="col col-sm col-md">
           <div class="media">
             <div class="media-body">
-              <h2 class="mt-0">
-                Weekend Grand Buffet <span class="badge badge-danger">NEW</span>
-              </h2>
+              <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
               <p>
-                Featuring mouthwatering combinations with a choice of five
-                different salads, six enticing appetizers, six main entrees and
-                five choicest desserts. Free flowing bubbly and soft drinks. All
-                for just $19.99 per person
+                Featuring mouthwatering combinations with a choice of five different salads, six
+                enticing appetizers, six main entrees and five choicest desserts. Free flowing
+                bubbly and soft drinks. All for just $19.99 per person
               </p>
             </div>
             <img
@@ -157,20 +152,16 @@
               <h2 class="mt-0">Alberto Somayya</h2>
               <h4>Executive Chef</h4>
               <p>
-                Award winning three-star Michelin chef with wide International
-                experience having worked closely with whos-who in the culinary
-                world, he specializes in creating mouthwatering Indo-Italian
-                fusion experiences.
+                Award winning three-star Michelin chef with wide International experience having
+                worked closely with whos-who in the culinary world, he specializes in creating
+                mouthwatering Indo-Italian fusion experiences.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        id="reserveSeat"
-        class="row row-content justify-content-center align-items-center"
-      >
+      <div id="reserveSeat" class="row row-content justify-content-center align-items-center">
         <div class="col col-sm-8">
           <div class="card">
             <div class="card-header bg-warning text-white">
@@ -179,68 +170,41 @@
             <div class="card-body">
               <form action="">
                 <div class="form-group row">
-                  <label class="col-md-2 col-form-label">
-                    Number of Guests
-                  </label>
+                  <label class="col-md-2 col-form-label"> Number of Guests </label>
                   <div class="col-md-10">
                     <div class="form-check-inline">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="guestNumber"
-                          checked
-                        />
+                        <input class="form-check-input" type="radio" name="guestNumber" checked />
                         1
                       </label>
                     </div>
                     <div class="form-check-inline">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="guestNumber"
-                        />
+                        <input class="form-check-input" type="radio" name="guestNumber" />
                         2
                       </label>
                     </div>
                     <div class="form-check-inline">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="guestNumber"
-                        />
+                        <input class="form-check-input" type="radio" name="guestNumber" />
                         3
                       </label>
                     </div>
                     <div class="form-check-inline">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="guestNumber"
-                        />
+                        <input class="form-check-input" type="radio" name="guestNumber" />
                         4
                       </label>
                     </div>
                     <div class="form-check-inline">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="guestNumber"
-                        />
+                        <input class="form-check-input" type="radio" name="guestNumber" />
                         5
                       </label>
                     </div>
                     <div class="form-check-inline">
                       <label class="form-check-label">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="guestNumber"
-                        />
+                        <input class="form-check-input" type="radio" name="guestNumber" />
                         6
                       </label>
                     </div>
@@ -269,9 +233,7 @@
                 </div>
                 <div class="form-group row">
                   <div class="col-md-10 offset-md-2">
-                    <button type="submit" class="btn btn-primary">
-                      Reserve
-                    </button>
+                    <button type="submit" class="btn btn-primary">Reserve</button>
                   </div>
                 </div>
               </form>
@@ -312,8 +274,7 @@
                   <i class="fab fa-google-plus-square fa-2x"></i>
                 </a>
                 <a href="http://www.facebook.com/profile.php?id=">
-                  <i class="fab fa-facebook-square fa-2x" aria-hidden="true">
-                  </i>
+                  <i class="fab fa-facebook-square fa-2x" aria-hidden="true"> </i>
                 </a>
                 <a href="http://www.linkedin.com/in/">
                   <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
@@ -354,8 +315,10 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"
   ></script>
-  <script
-    src="https://kit.fontawesome.com/61264638f9.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/61264638f9.js" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
 </html>
