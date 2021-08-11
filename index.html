@@ -303,14 +303,17 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-            <div class="btn-group" id="carouselButton">
+            <!-- <div class="btn-group" id="carouselButton">
               <button class="btn btn-danger btn-sm" id="carousel-pause">
                 <i class="fa fa-pause" aria-hidden="true"></i>
               </button>
               <button class="btn btn-danger btn-sm" id="carousel-play">
                 <i class="fa fa-play" aria-hidden="true"></i>
               </button>
-            </div>
+            </div> -->
+            <button class="btn btn-danger btn-sm" id="carouselButton">
+              <span class="fas fa-pause" aria-hidden="true"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -551,11 +554,14 @@
 
     $(document).ready(function () {
       $('#myCarousel').carousel({ interval: 2000 });
-      $('#carousel-pause').click(function () {
-        $('#myCarousel').carousel('pause');
-      });
-      $('#carousel-play').click(function () {
-        $('#myCarousel').carousel('cycle');
+      $('#carouselButton').click(function () {
+        if ($('#carouselButton').children('svg').hasClass('fa-pause')) {
+          $('#myCarousel').carousel('pause');
+          $('#carouselButton').children('svg').removeClass('fa-pause').addClass('fa-play');
+        } else {
+          $('#myCarousel').carousel('cycle');
+          $('#carouselButton').children('svg').removeClass('fa-play').addClass('fa-pause');
+        }
       });
     });
   </script>
